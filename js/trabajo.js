@@ -55,7 +55,7 @@ for(let i=0 ; i<2 ; i++){
 
 for(let compra of lista_clientes){
     console.log("El nombre del cliente es: ", compra.nombre);
-    console.log("El producto que elejio es: ", compra.producto);
+    console.log("El producto que eligio es: ", compra.producto);
     console.log("La cantidad es: ", compra.catidad);
     console.log("Paga con $", compra.pago);
     console.log("El mail es ", compra.mail);
