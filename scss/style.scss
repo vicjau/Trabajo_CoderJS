@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*BODY*/
+body{
+    background-color: rgb(156, 212, 212);
+}
+
+
+/*TITULO*/
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(156, 212, 212);
+    font-size: 100px;
+    text-align: center;
+    background-color: #2C5364;
+}
+
+/*TITULO MAIN*/
+.titulo_main{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2C5364;
+    font-size: 350%;
+    text-align: center;
+}
+
+/*FORM FILTRO*/
+form{
+    label{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 150%;
+        padding: 15px;
+    }
+}
+
+/*EMPANADAS*/
+.seccion_empanadas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "titulo_empanadas titulo_empanadas titulo_empanadas"
+                        "empanadas1 empanadas2 empanadas3"
+                        "empanadas4 empanadas5 empanadas6";
+    div{
+        display: flex;
+        justify-content:center;
+        color: white;
+        padding: 30px;
+        margin: 25px;
+    }
+}
+.titulo_empanadas{
+    grid-area: titulo_empanadas;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 250%;
+    color: #1a465a;
+    text-align: center;
+}
+.empanadas1{
+    grid-area: empanadas1;
+}
+.empanadas2{
+    grid-area: empanadas2;
+}
+.empanadas3{
+    grid-area: empanadas3;
+}
+.empanadas4{
+    grid-area: empanadas4;
+}
+.empanadas5{
+    grid-area: empanadas5;
+}
+.empanadas6{
+    grid-area: empanadas6;
+}
+
+/*PIZZAS*/
+.seccion_pizzas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "titulo_pizzas titulo_pizzas titulo_pizzas"
+                        "pizzas1 pizzas2 pizzas3"
+                        "pizzas4 pizzas5 pizzas6";
+    div{
+        display: flex;
+        justify-content:center;
+        color: white;
+        padding: 30px;
+        margin: 25px;
+    }
+}
+.titulo_pizzas{
+    grid-area: titulo_pizzas;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 250%;
+    color: #1a465a;
+
+    text-align: center;
+}
+.pizzas1{
+    grid-area: pizzas1;
+}
+.pizzas2{
+    grid-area: pizzas2;
+}
+.pizzas3{
+    grid-area: pizzas3;
+}
+.pizzas4{
+    grid-area: pizzas4;
+}
+.pizzas5{
+    grid-area: pizzas5;
+}
+.pizzas6{
+    grid-area: pizzas6;
+}
+
+/*MINUTAS*/
+.seccion_minutas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo_minutas titulo_minutas"
+                        "minutas1 minutas2"
+                        "minutas3 minutas4";
+    div{
+        display: flex;
+        justify-content:center;
+        color: white;
+        padding: 30px;
+        margin: 25px;
+    }
+}
+.titulo_minutas{
+    grid-area: titulo_minutas;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 250%;
+    color: #1a465a;
+    text-align: center
+}
+.minutas1{
+    grid-area: minutas1;
+}
+.minutas2{
+    grid-area: minutas2;
+}
+.minutas3{
+    grid-area: minutas3;
+}
+.minutas4{
+    grid-area: minutas4;
+}
+
+/*POSTRES*/
+.seccion_postres{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo_postres titulo_postres"
+                        "postres1 postres2"
+                        "postres3 postres4";
+    div{
+        display: flex;
+        justify-content:center;
+        color: white;
+        padding: 30px;
+        margin: 25px;
+    }
+}
+.titulo_postres{
+    grid-area: titulo_postres;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 250%;
+    color: #1a465a;
+    text-align: center
+}
+.postres1{
+    grid-area: postres1;
+}
+.postres2{
+    grid-area: postres2;
+}
+.postres3{
+    grid-area: postres3;
+}
+.postres4{
+    grid-area: postres4;
+}
+
+/*CARD'S*/
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+    background-color: #2C5364; 
+    box-shadow: 0 12px 16px rgba(0,0,0,2);
+
+    img{
+        height: 70%; 
+        width: 70%;
+        box-shadow: 0 10px 14px rgba(0,0,0,1);
+    }
+
+    h3{
+        padding: 18px;
+        margin: 10px;
+        font-size: 25px;
+    }
+
+    p{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    button{
+        background-color:  rgb(156, 212, 212);
+    }
+    
+}
+
+
+/*FOOTER*/
+footer{
+    background:#2C5364;
+    color: rgb(212, 209, 209);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 20px;
+}
