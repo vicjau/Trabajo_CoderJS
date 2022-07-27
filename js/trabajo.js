@@ -1,26 +1,59 @@
-//EVENTOS
 let boton = document.querySelectorAll(".boton_selec")
-let div = document.querySelectorAll("div")
 console.log(boton);
+let div = document.querySelectorAll("div")
+let btn_borrar = document.querySelectorAll(".borrar");
+let carrito =[]
+
 
 function compra(e){
     console.log("El producto que seleccionaste es ", e.target);
     let div = e.target;
     let div_boton = div.parentNode;
-    console.log(div_boton);
-    let producto = div_boton.querySelector("h3").textContent;
-    console.log(producto);
+    let producto_h3 = div_boton.querySelector("h3").textContent;
     let precio = div_boton.querySelector(".precio").textContent;
-    console.log(precio);
-    let parrafo = document.createElement("p");
+    let img = div_boton.querySelector("img").src;
+    console.log(img)
+    let parrafo = document.createElement("p").textContent;
     parrafo.innerHTML = "Seleccionaste este producto";
     div.append(parrafo);
+    console.log(parrafo)
+
+    let productos = {
+        nombre: producto_h3,
+        precio: precio,
+        img: img
+    };
+
+    carrito.push(productos);
+    let json = JSON.stringify(carrito);
+    localStorage.setItem("carrito", json);
+    console.log(carrito);
+
+    tu_compra()
+}
+
+function tu_compra(productos){
+    let fila = document.createElement("tr");
+    fila.innerHTML = `<td>${productos.nombre}</td>
+                    <td>${producto.precio}</td>
+                    <td><button class="borrar">Borrar</button></td>`;
+
+    let tabla = document.getElementById("tbody");
+    tabla.append(fila);
+    
 }
 
 for(let boton_compra of boton){
     boton_compra.addEventListener("click", compra);
 }
 
+for(let boton of btn_borrar){
+    boton.addEventListener("click" , eliminar)
+}
+
+function eliminar(e){
+    e.target.remove
+}
 
 
 

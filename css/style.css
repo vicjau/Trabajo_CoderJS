@@ -186,6 +186,12 @@ form label {
   .card button {
     background-color: #9cd4d4; }
 
+/*SECCION COMPRA*/
+.compra_carrito {
+  width: 100%;
+  background-color: grey;
+  height: 50vh; }
+
 /*FOOTER*/
 footer {
   background: #2C5364;
